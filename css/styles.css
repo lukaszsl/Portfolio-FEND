@@ -3,8 +3,10 @@
 	box-sizing: border-box;;
 }
 
-body {
+.container {
 	padding: 0 5%;
+	max-width: 1200px;
+	margin: 2% auto;
 }
 
 hr {
@@ -55,3 +57,24 @@ h1 {
 }
 
 /*=================== PROJECTS =====================*/
+.projects {
+	width: 100%;
+	margin-top: 4%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.projects__header {
+	width: 100%;
+}
+
+.project1,
+.project2,
+.project3 {
+	width: 30%;
+}
+
+.projects__image {
+	width: 100%;
+}
