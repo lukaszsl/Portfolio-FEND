@@ -15,6 +15,7 @@ hr {
 
 h1,
 h2,
+h3,
 p {
 	font-family: 'Ubuntu', sans-serif;
 }
@@ -73,8 +74,31 @@ h1 {
 .project2,
 .project3 {
 	width: 30%;
+	text-align: center; //center the links under the projects
 }
 
-.projects__image {
+.projects__images {
 	width: 100%;
+}
+
+.project1__title,
+.project2__title,
+.project3__title {
+	text-align: center;
+}
+
+.projects__links {
+	text-decoration: none;
+	color: #7d97ad;
+}
+
+/*=================== FOOTER =====================*/
+.footer {
+	margin-top: 6%;
+	text-align: center;
+}
+
+.footer__social-btn {
+	color: black;
+	margin: 0 1%;
 }
