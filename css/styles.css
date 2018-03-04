@@ -1,6 +1,6 @@
 /*=================== DEFAULT =====================*/
 * {
-	box-sizing: border-box;;
+	box-sizing: border-box;
 }
 
 .container {
@@ -70,24 +70,20 @@ h1 {
 	width: 100%;
 }
 
-.project1,
-.project2,
-.project3 {
+.project {
 	width: 30%;
 	text-align: center; //center the links under the projects
 }
 
-.projects__images {
+.project__image {
 	width: 100%;
 }
 
-.project1__title,
-.project2__title,
-.project3__title {
+.project__title {
 	text-align: center;
 }
 
-.projects__links {
+.project__link {
 	text-decoration: none;
 	color: #7d97ad;
 }
@@ -101,4 +97,29 @@ h1 {
 .footer__social-btn {
 	color: black;
 	margin: 0 1%;
+}
+
+/*############### tablet version ###############*/
+@media (min-width: 768px) and (max-width: 1200px) {
+	h2 {
+		font-size: 2em;
+	}
+
+	.main_picture img {
+		height: auto;
+	}
+
+	.projects__header {
+		text-align: center;
+		font-size:
+	}
+
+	.project {
+		width: 100%;
+		margin: 4% 0;
+	}
+
+	.project__title {
+		font-size: 1.5em;
+	}
 }
