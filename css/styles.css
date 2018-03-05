@@ -101,9 +101,6 @@ h1 {
 
 /*############### tablet version ###############*/
 @media (min-width: 768px) and (max-width: 1200px) {
-	h2 {
-		font-size: 2em;
-	}
 
 	.main_picture img {
 		height: auto;
@@ -111,7 +108,7 @@ h1 {
 
 	.projects__header {
 		text-align: center;
-		font-size:
+		font-size: 2.5em;
 	}
 
 	.project {
@@ -121,5 +118,50 @@ h1 {
 
 	.project__title {
 		font-size: 1.5em;
+	}
+
+	.project__link {
+		display: none;
+	}
+
+	.footer__header {
+		font-size: 1.5em;
+	}
+
+	.footer__author {
+		font-size: 1.2em;
+	}
+
+	.footer__social-btn {
+		font-size: 1.5em;
+	}
+}
+
+/*############### mobile version ###############*/
+@media (max-width: 767px) {
+	.name {
+		font-size: 1.5em;
+	}
+
+	.profession {
+		font-size: 1em;
+	}
+
+	.main_picture img {
+		height: auto;
+	}
+
+	.projects__header {
+		text-align: center;
+		font-size: 1.3em;
+	}
+
+	.project {
+		width: 100%;
+		margin: 4% 0;
+	}
+
+	.project__link {
+		display: none;
 	}
 }
