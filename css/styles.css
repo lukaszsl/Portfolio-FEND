@@ -75,17 +75,42 @@ h1 {
 	text-align: center; //center the links under the projects
 }
 
+.project__screenshot {
+	width: 330px;
+	height: auto;
+	position: relative;
+}
+
+/**** the layer that darkens the screenshot after hover ****/
+.screenshot__layer {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	transition: 0.8s;
+}
+
+.layer__text {
+	color: #fff;
+	display: none;
+}
+
+.screenshot__layer:hover {
+	background: rgba(0, 0, 0, 0.7);
+}
+/* show layer text after hover */
+.screenshot__layer:hover .layer__text {
+	display: block;
+}
+
 .project__image {
 	width: 100%;
 }
 
 .project__title {
 	text-align: center;
-}
-
-.project__link {
-	text-decoration: none;
-	color: #7d97ad;
 }
 
 /*=================== FOOTER =====================*/
@@ -116,12 +141,16 @@ h1 {
 		margin: 4% 0;
 	}
 
-	.project__title {
-		font-size: 1.5em;
+	.project__screenshot {
+		width: 100%
 	}
 
-	.project__link {
+	.screenshot__layer {
 		display: none;
+	}
+
+	.project__title {
+		font-size: 1.5em;
 	}
 
 	.footer__header {
@@ -161,7 +190,11 @@ h1 {
 		margin: 4% 0;
 	}
 
-	.project__link {
+	.project__screenshot {
+		width: 100%
+	}
+
+	.screenshot__layer {
 		display: none;
 	}
 }
