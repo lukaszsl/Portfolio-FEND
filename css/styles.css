@@ -72,7 +72,7 @@ h1 {
 
 .project {
 	width: 30%;
-	text-align: center; //center the links under the projects
+	text-align: center; /* center the links under the projects */
 }
 
 .project__screenshot {
@@ -122,6 +122,15 @@ h1 {
 .footer__social-btn {
 	color: black;
 	margin: 0 1%;
+}
+
+.icon-scale {
+	transition: 0.5s;
+}
+
+.icon-scale:hover {
+	transform: scale(1.5);
+	transition: 0.5s;
 }
 
 /*############### tablet version ###############*/
